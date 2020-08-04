@@ -1,0 +1,14 @@
+//bridge-file-version: #18
+{
+	"format_version": 1.1,
+	"minecraft:item": {
+		"description": {
+			"identifier": "bdoors:jungle_door_item"
+		},
+		"components": {
+			"minecraft:use_duration": 32,
+			"minecraft:hand_equipped": true,
+			"minecraft:max_stack_size": 1
+		}
+	}
+}

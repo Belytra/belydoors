@@ -1,0 +1,8 @@
+{
+	"file_path": "C:\\Users\\User\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Fixingasd\\texts\\en_US.lang",
+	"file_type": "client_lang",
+	"format_version": 0,
+	"file_uuid": "7dd37520_6cc9_415a_a9b4_25f77486612e",
+	"file_version": 8,
+	"cache_content": "pack.name=§dBelyDoors\npack.description=§bNuevas Puertas Con Animaciones!!! By @Pammsitoh RII\nitem.bdoors:door_remover.name=Door Remover\nitem.bdoors:door_rotator.name=Door Rotator\nitem.bdoors:iron_stick.name=Iron Stick\nitem.bdoors:plank_door_item.name=Dark Oak Door\nitem.bdoors:glass_door_item.name=Glass Door\nitem.bdoors:birch_door_item.name=Birch Door\nitem.bdoors:jungle_door_item.name=Jungle Door\nitem.bdoors:chain_door_item.name=Iron Bars Door\nitem.bdoors:secret_door_item.name=Bookshelf Door\n\nitem.spawn_egg.entity.bdoors:plank_door.name=Dark Oak Door (3x3)\nitem.spawn_egg.entity.bdoors:birch_door.name=Birch Door (3x3)\nitem.spawn_egg.entity.bdoors:jungle_door.name=Jungle Door (3x3)\nitem.spawn_egg.entity.bdoors:glass_door.name=Glass Door (3x3)\nitem.spawn_egg.entity.bdoors:chain_door.name=Iron Bars Door (3x3)\nitem.spawn_egg.entity.bdoors:secret_door.name=Bookshelf Door (3x3)\nbdoors.text.use=Use\n"
+}

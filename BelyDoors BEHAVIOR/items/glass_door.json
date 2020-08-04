@@ -1,0 +1,14 @@
+//bridge-file-version: #17
+{
+	"format_version": 1.1,
+	"minecraft:item": {
+		"description": {
+			"identifier": "bdoors:glass_door_item"
+		},
+		"components": {
+			"minecraft:use_duration": 32,
+			"minecraft:hand_equipped": true,
+			"minecraft:max_stack_size": 1
+		}
+	}
+}

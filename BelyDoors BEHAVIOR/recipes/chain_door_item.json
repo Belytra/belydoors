@@ -1,0 +1,32 @@
+//bridge-file-version: #39
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "bdoors:chain_door_item"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XXX",
+			"XXX",
+			"OOO"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:iron_bars"
+			},
+			"O": {
+				"item": "bdoors:iron_stick"
+			}
+		},
+		"result": [
+			{
+				"item": "bdoors:chain_door_item",
+				"count": 1,
+				"data": 0
+			}
+		]
+	}
+}

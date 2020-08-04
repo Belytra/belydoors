@@ -1,0 +1,12 @@
+//bridge-file-version: #1
+{
+	"format_version": 1.1,
+	"minecraft:item": {
+		"description": {
+			"identifier": "bdoors:door_rotator"
+		},
+		"components": {
+			"minecraft:use_duration": 32
+		}
+	}
+}

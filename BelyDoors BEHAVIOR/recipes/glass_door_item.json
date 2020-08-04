@@ -1,0 +1,32 @@
+//bridge-file-version: #26
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "bdoors:glass_door_item"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XXO",
+			"XXO",
+			"XXO"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:glass"
+			},
+			"O": {
+				"item": "bdoors:iron_stick"
+			}
+		},
+		"result": [
+			{
+				"item": "bdoors:glass_door_item",
+				"count": 1,
+				"data": 0
+			}
+		]
+	}
+}

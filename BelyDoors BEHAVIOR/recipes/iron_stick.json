@@ -1,0 +1,29 @@
+//bridge-file-version: #5
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "bdoors:iron_stick"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" X",
+			" X",
+			" X"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "bdoors:iron_stick",
+				"count": 9,
+				"data": 0
+			}
+		]
+	}
+}

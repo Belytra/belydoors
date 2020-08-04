@@ -1,0 +1,299 @@
+//bridge-file-version: #78
+{
+	"format_version": "1.13.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "bdoors:jungle_door_r",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:boat",
+			"scripts": {
+				"animate": [
+					"bridge_execute_commands"
+				]
+			},
+			"animations": {
+				"bridge_execute_commands": "controller.animation.bridge_jungle_door_rotada.execute_commands"
+			}
+		},
+		"component_groups": {
+			"bd:open_com": {
+				"minecraft:transformation": {
+					"into": "bdoors:jungle_door_r",
+					"delay": {
+						"value": 2.5
+					}
+				},
+				"minecraft:collision_box": {
+					"width": 0,
+					"height": 0
+				}
+			},
+			"bd:rotate": {
+				"minecraft:transformation": {
+					"into": "bdoors:jungle_door",
+					"transformation_sound": "random.pop",
+					"keep_level": true,
+					"delay": {
+						"block_radius": 1
+					}
+				},
+				"minecraft:collision_box": {
+					"width": 0,
+					"height": 0
+				}
+			},
+			"bd:remove": {
+				"minecraft:despawn": {}
+			},
+			"bridge:execute_command_id_1": {
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			},
+			"bridge:execute_no_command": {
+				"minecraft:skin_id": {
+					"value": 0
+				}
+			},
+			"bridge:execute_command_id_2": {
+				"minecraft:skin_id": {
+					"value": 2
+				}
+			},
+			"bridge:execute_command_id_3": {
+				"minecraft:skin_id": {
+					"value": 3
+				}
+			},
+			"bridge:execute_command_id_4": {
+				"minecraft:skin_id": {
+					"value": 4
+				}
+			},
+			"bridge:execute_command_id_5": {
+				"minecraft:skin_id": {
+					"value": 5
+				}
+			},
+			"bridge:execute_command_id_6": {
+				"minecraft:skin_id": {
+					"value": 6
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"armor_stand",
+					"inanimate",
+					"mob"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 2.5
+			},
+			"minecraft:health": {
+				"value": 6,
+				"max": 6
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/armor_stand.json"
+			},
+			"minecraft:nameable": {
+				"allow_name_tag_renaming": true,
+				"always_show": true,
+				"name_actions": [
+					{
+						"on_named": {
+							"event": "name:added"
+						}
+					}
+				]
+			},
+			"minecraft:persistent": {},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_equipment",
+										"subject": "other",
+										"domain": "hand",
+										"value": "bdoors:door_rotator"
+									}
+								]
+							},
+							"event": "bd:rotate"
+						},
+						"swing": true
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"test": "has_equipment",
+								"subject": "other",
+								"domain": "hand",
+								"value": "bdoors:door_remover"
+							},
+							"event": "bd:remove"
+						},
+						"spawn_items": {
+							"table": "loot_tables/jungle_door.json"
+						},
+						"hurt_item": 1
+					},
+					{
+						"on_interact": {
+							"event": "bd:open"
+						},
+						"swing": true
+					}
+				]
+			}
+		},
+		"events": {
+			"bd:open": {
+				"add": {
+					"component_groups": [
+						"bd:open_com",
+						"bridge:execute_command_id_1"
+					]
+				}
+			},
+			"minecraft:entity_transformed": {
+				"add": {
+					"component_groups": [
+						"bridge:execute_command_id_2"
+					]
+				}
+			},
+			"minecraft:on_prime": {
+				"add": {
+					"component_groups": [
+						"bd:open_com",
+						"bridge:execute_command_id_3"
+					]
+				}
+			},
+			"name:added": {
+				"add": {
+					"component_groups": [
+						"bridge:execute_command_id_4"
+					]
+				}
+			},
+			"bd:rotate": {
+				"add": {
+					"component_groups": [
+						"bd:rotate",
+						"bridge:execute_command_id_5"
+					]
+				}
+			},
+			"bd:remove": {
+				"add": {
+					"component_groups": [
+						"bd:remove",
+						"bridge:execute_command_id_6"
+					]
+				}
+			},
+			"bridge:remove_command_id_1": {
+				"add": {
+					"component_groups": [
+						"bridge:execute_no_command"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"bridge:execute_command_id_1"
+					]
+				}
+			},
+			"bridge:remove_command_id_2": {
+				"add": {
+					"component_groups": [
+						"bridge:execute_no_command"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"bridge:execute_command_id_2"
+					]
+				}
+			},
+			"bridge:remove_command_id_3": {
+				"add": {
+					"component_groups": [
+						"bridge:execute_no_command"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"bridge:execute_command_id_3"
+					]
+				}
+			},
+			"bridge:remove_command_id_4": {
+				"add": {
+					"component_groups": [
+						"bridge:execute_no_command"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"bridge:execute_command_id_4"
+					]
+				}
+			},
+			"bridge:remove_command_id_5": {
+				"add": {
+					"component_groups": [
+						"bridge:execute_no_command"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"bridge:execute_command_id_5"
+					]
+				}
+			},
+			"bridge:remove_command_id_6": {
+				"add": {
+					"component_groups": [
+						"bridge:execute_no_command"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"bridge:execute_command_id_6"
+					]
+				}
+			}
+		}
+	}
+}

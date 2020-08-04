@@ -1,0 +1,29 @@
+//bridge-file-version: #16
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "bdoors:door_remover"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"X X",
+			"XXX",
+			" X "
+		],
+		"key": {
+			"X": {
+				"item": "bdoors:iron_stick"
+			}
+		},
+		"result": [
+			{
+				"item": "bdoors:door_remover",
+				"count": 1,
+				"data": 0
+			}
+		]
+	}
+}
