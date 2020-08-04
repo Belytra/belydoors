@@ -1,0 +1,15 @@
+//bridge-file-version: #7
+{
+	"format_version": 1.1,
+	"minecraft:item": {
+		"description": {
+			"identifier": "bdoors:jungle_door_item",
+			"category": "Items"
+		},
+		"components": {
+			"minecraft:icon": "jungle_door_mod",
+			"minecraft:use_animation": "eat",
+			"minecraft:render_offsets": "apple"
+		}
+	}
+}

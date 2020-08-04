@@ -1,0 +1,15 @@
+//bridge-file-version: #8
+{
+	"format_version": 1.1,
+	"minecraft:item": {
+		"description": {
+			"identifier": "bdoors:chain_door_item",
+			"category": "Items"
+		},
+		"components": {
+			"minecraft:icon": "chain_door",
+			"minecraft:use_animation": "eat",
+			"minecraft:render_offsets": "apple"
+		}
+	}
+}

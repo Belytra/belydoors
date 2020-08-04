@@ -1,0 +1,15 @@
+//bridge-file-version: #4
+{
+	"format_version": 1.1,
+	"minecraft:item": {
+		"description": {
+			"identifier": "bdoors:glass_door_item",
+			"category": "Items"
+		},
+		"components": {
+			"minecraft:icon": "glass_door",
+			"minecraft:use_animation": "eat",
+			"minecraft:render_offsets": "apple"
+		}
+	}
+}

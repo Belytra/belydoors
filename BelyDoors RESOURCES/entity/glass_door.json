@@ -1,0 +1,39 @@
+//bridge-file-version: #24
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "bdoors:glass_door",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "armor_stand"
+			},
+			"textures": {
+				"default": "textures/entity/glass_door"
+			},
+			"animations": {
+				"default": "animation.glass_door.open",
+				"open": "animation.glass_door.open",
+				"close": "animation.glass_door.close",
+				"pose": "controller.animation.glass_door.pose"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"open": "query.is_transforming"
+					}
+				]
+			},
+			"geometry": {
+				"default": "geometry.glass_door"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"spawn_egg": {
+				"texture": "glass_door",
+				"texture_index": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+//bridge-file-version: #32
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "bdoors:plank_door_r",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "armor_stand"
+			},
+			"textures": {
+				"default": "textures/entity/plank_door_r"
+			},
+			"animations": {
+				"default": "animation.plank_door.open",
+				"open": "animation.plank_door.open",
+				"close": "animation.plank_door.close",
+				"pose": "controller.animation.glass_door.pose"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"open": "query.is_transforming"
+					}
+				]
+			},
+			"geometry": {
+				"default": "geometry.glass_door_r"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"spawn_egg": {
+				"texture": "dark_door",
+				"texture_index": 0
+			}
+		}
+	}
+}

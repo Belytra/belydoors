@@ -1,0 +1,20 @@
+##bridge-file-version: #8
+pack.name=§dBelyDoors
+pack.description=§bNuevas Puertas Con Animaciones!!! By @Pammsitoh RII
+item.bdoors:door_remover.name=Door Remover
+item.bdoors:door_rotator.name=Door Rotator
+item.bdoors:iron_stick.name=Iron Stick
+item.bdoors:plank_door_item.name=Dark Oak Door
+item.bdoors:glass_door_item.name=Glass Door
+item.bdoors:birch_door_item.name=Birch Door
+item.bdoors:jungle_door_item.name=Jungle Door
+item.bdoors:chain_door_item.name=Iron Bars Door
+item.bdoors:secret_door_item.name=Bookshelf Door
+
+item.spawn_egg.entity.bdoors:plank_door.name=Dark Oak Door (3x3)
+item.spawn_egg.entity.bdoors:birch_door.name=Birch Door (3x3)
+item.spawn_egg.entity.bdoors:jungle_door.name=Jungle Door (3x3)
+item.spawn_egg.entity.bdoors:glass_door.name=Glass Door (3x3)
+item.spawn_egg.entity.bdoors:chain_door.name=Iron Bars Door (3x3)
+item.spawn_egg.entity.bdoors:secret_door.name=Bookshelf Door (3x3)
+bdoors.text.use=Use

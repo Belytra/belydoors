@@ -1,0 +1,39 @@
+//bridge-file-version: #49
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "bdoors:chain_door_r",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "armor_stand"
+			},
+			"textures": {
+				"default": "textures/entity/chain_door"
+			},
+			"animations": {
+				"default": "animation.chain_door.open",
+				"open": "animation.chain_door.open",
+				"close": "animation.chain_door.close",
+				"pose": "controller.animation.glass_door.pose"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"open": "query.is_transforming"
+					}
+				]
+			},
+			"geometry": {
+				"default": "geometry.chain_door_r"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"spawn_egg": {
+				"texture": "chain_door",
+				"texture_index": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+//bridge-file-version: #33
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "bdoors:birch_door",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "armor_stand"
+			},
+			"textures": {
+				"default": "textures/entity/birch_door"
+			},
+			"animations": {
+				"default": "animation.plank_door.open",
+				"open": "animation.plank_door.open",
+				"close": "animation.plank_door.close",
+				"pose": "controller.animation.glass_door.pose"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"open": "query.is_transforming"
+					}
+				]
+			},
+			"geometry": {
+				"default": "geometry.glass_door"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"spawn_egg": {
+				"texture": "birch_door_t",
+				"texture_index": 0
+			}
+		}
+	}
+}

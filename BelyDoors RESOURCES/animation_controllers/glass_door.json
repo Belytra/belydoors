@@ -1,0 +1,26 @@
+//bridge-file-version: #8
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.glass_door.pose": {
+			"initial_state": "open",
+			"states": {
+				"default": {},
+				"open": {
+					"animations": [
+						{
+							"open": "(2.08)"
+						}
+					]
+				},
+				"close": {
+					"animations": [
+						{
+							"close": "(1.0)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

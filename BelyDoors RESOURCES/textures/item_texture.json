@@ -1,0 +1,52 @@
+//bridge-file-version: #7
+{
+	"resource_pack_name": "bridgeRP",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"dark_door": {
+			"textures": [
+				"textures/items/dark_door"
+			]
+		},
+		"birch_door_t": {
+			"textures": [
+				"textures/items/birch_door_t"
+			]
+		},
+		"glass_door": {
+			"textures": [
+				"textures/items/glass_door"
+			]
+		},
+		"jungle_door_mod": {
+			"textures": [
+				"textures/items/jungle_door"
+			]
+		},
+		"door_rotator": {
+			"textures": [
+				"textures/items/door_rotator"
+			]
+		},
+		"chain_door": {
+			"textures": [
+				"textures/items/chain_door"
+			]
+		},
+		"door_remover": {
+			"textures": [
+				"textures/items/door_remover"
+			]
+		},
+		"iron_stick": {
+			"textures": [
+				"textures/items/iron_stick"
+			]
+		},
+		"secret_door": {
+			"textures": [
+				"textures/items/secret_door"
+			]
+		}
+	}
+}
