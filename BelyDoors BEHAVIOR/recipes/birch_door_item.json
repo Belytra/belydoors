@@ -24,9 +24,8 @@
 		},
 		"result": [
 			{
-				"item": "bdoors:birch_door_item",
-				"count": 1,
-				"data": 0
+				"item": "spawn_egg",
+        			"data": "query.get_actor_info_id('bdoors:birch_door')"
 			}
 		]
 	}
