@@ -1,10 +1,12 @@
 {
-  "1685": {
-    "cap1": "https://i0.wp.com/belytra.com/wp-content/uploads/2020/08/Screenshot_20200812_142926_com.mojang.minecraftpe.jpg?w=843&ssl=1",
-    "cap2": "https://i0.wp.com/belytra.com/wp-content/uploads/2020/08/Screenshot_20200812_143709_com.mojang.minecraftpe-1.jpg?w=843&ssl=1",
-    "cap3": "https://i0.wp.com/belytra.com/wp-content/uploads/2020/08/Screenshot_20200812_142909_com.mojang.minecraftpe.jpg?w=912&ssl=1",
-    "cap4": "https://i2.wp.com/belytra.com/wp-content/uploads/2020/08/Minecraft_12_08_2020_01_10_37_a._m..png?w=529&ssl=1",
-    "cap5": "https://i0.wp.com/belytra.com/wp-content/uploads/2020/09/Minecraft-9_4_2020-10_28_39-PM.png?w=529&ssl=1",
-    "download": ""
-  }
+  "posts": [
+    "1685": {
+      "cap1": "https://i0.wp.com/belytra.com/wp-content/uploads/2020/08/Screenshot_20200812_142926_com.mojang.minecraftpe.jpg?w=843&ssl=1",
+      "cap2": "https://i0.wp.com/belytra.com/wp-content/uploads/2020/08/Screenshot_20200812_143709_com.mojang.minecraftpe-1.jpg?w=843&ssl=1",
+      "cap3": "https://i0.wp.com/belytra.com/wp-content/uploads/2020/08/Screenshot_20200812_142909_com.mojang.minecraftpe.jpg?w=912&ssl=1",
+      "cap4": "https://i2.wp.com/belytra.com/wp-content/uploads/2020/08/Minecraft_12_08_2020_01_10_37_a._m..png?w=529&ssl=1",
+      "cap5": "https://i0.wp.com/belytra.com/wp-content/uploads/2020/09/Minecraft-9_4_2020-10_28_39-PM.png?w=529&ssl=1",
+      "download": ""
+    }
+  ]
 }
